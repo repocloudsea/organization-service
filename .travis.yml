@@ -8,7 +8,7 @@ install: true
 script: mvn package docker:build -q
 after_success:
 - docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- docker push cloudsea/department-service
+- docker push cloudsea/organization-service
 env:
   global:
   - secure: vxpmqSxAwjbNoM0Sv1u5Ildl4KyoBvHCearh3cNJFIM/25wbLJxRM2hBlZ4dArFNccTANMJ7kuqd+vWZ474aK/M7VBXJjulRoXBnx88mfF/raXRV5Zwm5grPGY7lW4Dd8JOJTLvBC8fHWSrReqLej3IB6r+dQPKA/vfXJ4HYQ49QLb7Rt7SU+7JV4/JbkJlnCptXZr288yHV/1+pVphSejjG/W0/lEYhoePnmA/JjAcdWOcETJPnujmnanNhJz5xR3X+imQWzxhIJsNSkGCGdsuoa0rSSaiiLDtUqpN/3CHPy//3FZj/siuWJ7XOsnRECPO8L9+rZW3v96ujMEpaXof5yotjWnzzv5Jd9ZjSdJv83HB/KubMjE3uTT4QQX/DTERVcsDbBmt5Mgg+N21KDfeOVsA9kRJvOM70sNyDgT6LaGEgYRiV/40SQ2DmYQq6FYHjOGKbxJ0tRK7BxtRiGkQVkexPK+fF8w505xvoLhVB1drzb+5VbgdpvGnYEOWy6rZlcJw+F545vGUv2Uie6vdxemYSTfHh6SziGXfNlWYIvOtkyXRs9Zb/GMRRV/ybOU04ajRBNDE0zRIfvCLPkcmt8DCj4xHTuGErY+KJ3E3AswSxKxb72cwSY1bScYOnWG0SJEKFeTs0BummQTsu2lhle/F5jtGXDnUgjpCOQXQ=
