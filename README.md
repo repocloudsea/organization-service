@@ -1,5 +1,5 @@
 
-# Organization Service : 
+# Organization Service  
 
 
 ![](https://reposs.herokuapp.com/?path=CocoaPods/Specs)
